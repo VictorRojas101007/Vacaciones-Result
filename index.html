@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vacationista Search</title>
+    <link href="./estilos/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <h1>Vacationista Search</h1>
+    <p id="message"></p>
+    <div class="content">
+        <h2>Listing Details</h2>
+        <ul>
+            <li>Beds: 6</li>
+            <li>Review Score: 4.78</li>
+            <li>Cost: 150</li>
+            <li>Pool: Yes</li>
+            <li>Location: Spain</li>
+        </ul>
+        <h2>Your Requirements</h2>
+        <ul>
+            <li>Minimum Beds: <input type="number" id="userMinBeds" placeholder="Enter minimum beds"></li>
+            <li>Minimum Review Score: <input type="number" id="userMinReviewScore" step="0.01"
+                    placeholder="Enter minimum review score"></li>
+            <li>Maximum Cost Per Night: <input type="number" step="10" id="userCostPerNight"
+                    placeholder="Enter maximum Cost Per Night"> </li>
+            <li>Must have a pool: <input type="checkbox" id="userNeedPool"></li>
+            <li>Location: <input type="text" id="userLocation" placeholder="Enter your Location"></li>
+        </ul>
+        <button onclick="checkMatch()">Check Match</button>
+    </div>
+    <div class="img">
+        <img src="./img/Cuarto.hotel.jpg" alt="Cuarto Hotel" height="450px" width="510px">
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
